@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diya Dhamanda — Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Diya Dhamanda, Full Stack Developer based in Navsari, Gujarat. React, Node.js, Express, MongoDB.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand">Diya<span>.dev</span></a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="resume.pdf" class="btn btn--sm btn--primary" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="section-inner hero__inner">
+
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow">Full&nbsp;Stack&nbsp;Developer&nbsp;·&nbsp;Navsari, Gujarat</p>
+          <h1 class="hero__title">Diya Dhamanda</h1>
+          <p class="hero__lede">
+            I build clean, scalable web applications end to end — from responsive
+            interfaces to the APIs and databases behind them. Currently sharpening
+            my craft in the MERN stack and looking for an internship where I can
+            ship real features from day one.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              View Projects
+            </a>
+
+            <a href="./resume.pdf" target="_blank" class="btn btn--outline">
+              View Resume
+            </a>
+
+            <a href="./resume.pdf" download class="btn btn--primary">
+              Download Resume
+            </a>
+          </div>
+
+          <div class="hero__social">
+            <a href="https://github.com/dev-dhamandadiya" target="_blank" rel="noopener" class="icon-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .31.21.67.8.56A10.98 10.98 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/diya-dhamanda-382470367" target="_blank" rel="noopener"
+              class="icon-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__panel" data-reveal>
+          <div class="code-card">
+            <div class="code-card__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="code-card__filename">developer.js</span>
+            </div>
+            <pre class="code-card__body"><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-key">name</span>: <span class="tok-str">"Diya Dhamanda"</span>,
+  <span class="tok-key">role</span>: <span class="tok-str">"Full Stack Developer"</span>,
+  <span class="tok-key">location</span>: <span class="tok-str">"Navsari, Gujarat"</span>,
+  <span class="tok-key">education</span>: <span class="tok-str">"B.Com Graduate"</span>,
+  <span class="tok-key">stack</span>: [<span class="tok-str">"React"</span>, <span class="tok-str">"Node"</span>, <span class="tok-str">"Express"</span>, <span class="tok-str">"MongoDB"</span>],
+  <span class="tok-key">status</span>: <span class="tok-str">"open to internships"</span>,
+  <span class="tok-fn">isPassionate</span>: () => <span class="tok-bool">true</span>,
+};</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-reveal>About</p>
+        <h2 class="section-title" data-reveal>A commerce graduate who fell in love with code</h2>
+
+        <div class="about__grid">
+          <p class="about__lead" data-reveal>
+            I started out with a B.Com degree, but building things on the web pulled
+            me in — so I went all in on full stack development. Today I'm focused on
+            writing clean, scalable applications and understanding how the frontend
+            and backend fit together as one system, not two separate jobs.
+          </p>
+
+          <div class="about__points" data-reveal>
+            <div class="point-card">
+              <span class="point-card__mark">Bc</span>
+              <h3>B.Com Graduate</h3>
+              <p>A foundation in commerce that sharpened my analytical and problem-solving thinking.</p>
+            </div>
+            <div class="point-card">
+              <span class="point-card__mark">FS</span>
+              <h3>Full Stack Learner</h3>
+              <p>Actively training across the MERN stack, from UI to API to database.</p>
+            </div>
+            <div class="point-card">
+              <span class="point-card__mark">{ }</span>
+              <h3>Builder at Heart</h3>
+              <p>Passionate about building scalable, maintainable web applications.</p>
+            </div>
+            <div class="point-card">
+              <span class="point-card__mark">↔</span>
+              <h3>Frontend + Backend</h3>
+              <p>Strong interest in both sides of the stack, and how they connect.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--tint" id="skills">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-reveal>Skills</p>
+        <h2 class="section-title" data-reveal>Tools I build with</h2>
+
+        <div class="skills__grid">
+
+          <div class="skill-card" data-reveal>
+            <h3 class="skill-card__title">Frontend</h3>
+            <ul class="skill-card__list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>React JS</li>
+            </ul>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3 class="skill-card__title">Backend</h3>
+            <ul class="skill-card__list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+            </ul>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3 class="skill-card__title">Database</h3>
+            <ul class="skill-card__list">
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3 class="skill-card__title">Programming &amp; Concepts</h3>
+            <ul class="skill-card__list">
+              <li>Data Structures &amp; Algorithms</li>
+              <li>REST APIs</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <h3 class="skill-card__title">Tools</h3>
+            <ul class="skill-card__list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-reveal>Education</p>
+        <h2 class="section-title" data-reveal>My learning path</h2>
+
+        <div class="timeline">
+          <div class="timeline__item" data-reveal>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Bachelor of Commerce (B.Com)</h3>
+              <p>Built a strong base in analytical thinking, structured problem-solving
+                and communication — skills that now carry directly into how I plan
+                and reason about code.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item" data-reveal>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <h3>Full Stack Development Training</h3>
+              <p>Hands-on training across HTML, CSS, JavaScript, React, Node.js,
+                Express.js and MongoDB — building real projects end to end,
+                from UI to database.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATES ================= -->
+    <section class="section section--tint" id="certificates">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-reveal>Certificates &amp; Achievements</p>
+        <h2 class="section-title" data-reveal>Recognition along the way</h2>
+
+        <div class="cert__grid">
+          <div class="cert-card" data-reveal>
+            <div class="cert-card__icon">🎓</div>
+            <h3>Infosys HTML &amp; CSS Certificate</h3>
+            <p>Certified in front-end fundamentals through Infosys Springboard.</p>
+          </div>
+          <div class="cert-card" data-reveal>
+            <div class="cert-card__icon">🥈</div>
+            <h3>Skill India — District Level Runner-Up</h3>
+            <p>Recognised for strong technical performance at the district level.</p>
+          </div>
+          <div class="cert-card" data-reveal>
+            <div class="cert-card__icon">🏅</div>
+            <h3>Skill India — State Level Participant</h3>
+            <p>Represented at the state level, competing among top skilled candidates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-reveal>Projects</p>
+        <h2 class="section-title" data-reveal>Things I've built</h2>
+
+        <div class="projects__grid">
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__top">
+              <h3>Bootstrap Finder</h3>
+
+              <p>
+                A modern and fully responsive business directory website built using
+                Bootstrap 5 with category filtering, listings, search functionality,
+                and responsive layouts.
+              </p>
+            </div>
+
+            <div class="tag-row">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Bootstrap 5</span>
+            </div>
+
+            <div class="project-card__actions">
+              <a href="https://github.com/dev-dhamandadiya/Bootstrap-Finder" target="_blank"
+                class="btn btn--sm btn--outline">
+                GitHub
+              </a>
+
+              <a href="https://bootstrap-finder.vercel.app/" target="_blank" class="btn btn--sm btn--primary">
+                Live Demo
+              </a>
+            </div>
+
+          </article>
+          <article class="project-card" data-reveal>
+            <div class="project-card__top">
+              <h3>E-Commerce Landing Page</h3>
+              <p>
+                A modern and responsive e-commerce landing page built with
+                Tailwind CSS. Features product showcases, hero sections,
+                responsive layouts, and optimized user experience across devices.
+              </p>
+            </div>
+
+            <div class="tag-row">
+              <span class="tag">HTML</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <div class="project-card__actions">
+              <a href="https://github.com/dev-dhamandadiya/PR-Tailwind-project.git" target="_blank"
+                class="btn btn--sm btn--outline">
+                GitHub
+              </a>
+
+              <a href="https://pr-tailwind-project.vercel.app/" target="_blank" class="btn btn--sm btn--primary">
+                Live Demo
+              </a>
+            </div>
+
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__top">
+              <h3>Weather Forecast Application</h3>
+              <p>
+                A dynamic weather application that fetches real-time weather
+                information using APIs. Users can search cities and view
+                temperature, humidity, and weather conditions instantly.
+              </p>
+            </div>
+
+            <div class="tag-row">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+            </div>
+
+            <div class="project-card__actions">
+              <a href="https://github.com/dev-dhamandadiya/PR-Weather-Api.js.git" target="_blank"
+                class="btn btn--sm btn--outline">
+                GitHub
+              </a>
+
+              <a href="https://pr-weather-api-js-theta.vercel.app/" target="_blank" class="btn btn--sm btn--primary">
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__top">
+              <h3>Book Store Management System</h3>
+              <p>
+                A backend-powered bookstore management system built using
+                Node.js, Express.js, and MongoDB. Supports CRUD operations,
+                API integration, and database management.
+              </p>
+            </div>
+
+            <div class="tag-row">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">REST API</span>
+            </div>
+
+            <div class="project-card__actions">
+              <a href="https://github.com/dev-dhamandadiya/Login-System-With-Blog-Project.node.JS.git" target="_blank"
+                class="btn btn--sm btn--outline">
+                GitHub
+              </a>
+
+              <a href="https://pr-weather-api-js-theta.vercel.app/" target="_blank" class="btn btn--sm btn--primary">
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__top">
+              <h3>Product Management System</h3>
+              <p>
+                A React-based product management application featuring CRUD
+                operations, reusable components, state management, and a
+                responsive user interface for managing products efficiently.
+              </p>
+            </div>
+
+            <div class="tag-row">
+              <span class="tag">React JS</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Redux Toolkit</span>
+            </div>
+
+            <div class="project-card__actions">
+              <a href="YOUR_GITHUB_LINK" target="_blank" class="btn btn--sm btn--outline">GitHub</a>
+              <a href="YOUR_LIVE_LINK" target="_blank" class="btn btn--sm btn--primary">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY HIRE ME ================= -->
+    <section class="section section--dark" id="why">
+      <div class="section-inner">
+        <p class="section-eyebrow section-eyebrow--light" data-reveal>Why Hire Me</p>
+        <h2 class="section-title section-title--light" data-reveal>What I bring to a team</h2>
+
+        <div class="why__grid">
+          <div class="why-card" data-reveal>
+            <span class="why-card__icon">⚙</span>
+            <h3>Full Stack Knowledge</h3>
+            <p>Comfortable across the frontend, backend and database layers.</p>
+          </div>
+          <div class="why-card" data-reveal>
+            <span class="why-card__icon">⚡</span>
+            <h3>Quick Learner</h3>
+            <p>I pick up new tools and codebases fast, and stay curious.</p>
+          </div>
+          <div class="why-card" data-reveal>
+            <span class="why-card__icon">🧩</span>
+            <h3>Problem Solver</h3>
+            <p>I enjoy breaking down complex issues into workable solutions.</p>
+          </div>
+          <div class="why-card" data-reveal>
+            <span class="why-card__icon">🤝</span>
+            <h3>Team Player</h3>
+            <p>I collaborate well and value clear, honest communication.</p>
+          </div>
+          <div class="why-card" data-reveal>
+            <span class="why-card__icon">💬</span>
+            <h3>Strong Communication</h3>
+            <p>I can explain technical ideas clearly to any audience.</p>
+          </div>
+          <div class="why-card" data-reveal>
+            <span class="why-card__icon">📈</span>
+            <h3>Continuous Learner</h3>
+            <p>Always improving my craft — one project, one concept at a time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <p class="section-eyebrow" data-reveal>Contact</p>
+        <h2 class="section-title" data-reveal>Let's build something together</h2>
+
+        <div class="contact__grid">
+
+          <div class="contact__info" data-reveal>
+            <p class="contact__blurb">
+              I'm actively looking for internship opportunities in full stack
+              development. Reach out — I'd love to hear about what you're building.
+            </p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__label">Email</span>
+                <a href="mailto:diyadhamanda@gmail.com">diyadhamanda@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact__label">GitHub</span>
+                <a href="https://github.com/dev-dhamandadiya" target="_blank" rel="noopener">dev-dhamandadiya</a>
+              </li>
+              <li>
+                <span class="contact__label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/diya-dhamanda-382470367" target="_blank"
+                  rel="noopener">diya-dhamanda</a>
+              </li>
+              <li>
+                <span class="contact__label">Location</span>
+                <span>Navsari, Gujarat, India</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" data-reveal>
+            <div class="contact-form__row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="contact-form__row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="contact-form__row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="section-inner footer__inner">
+
+      <div class="footer__brand">
+        <p class="footer__logo">Diya<span>.dev</span></p>
+        <p>Full Stack Developer building clean, scalable web applications.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Social</h4>
+        <a href="https://github.com/dev-dhamandadiya" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/diya-dhamanda-382470367" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:diyadhamanda@gmail.com">Email</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Location</h4>
+        <p>Navsari, Gujarat, India</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Diya Dhamanda. All rights reserved.</p>
+      <p>Designed and developed by Diya Dhamanda</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-link, .navbar__nav .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        navToggle.classList.remove('is-open');
+      });
+    });
+
+    // Navbar scrolled state
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('is-scrolled', window.scrollY > 20);
+      document.getElementById('backToTop').classList.toggle('is-visible', window.scrollY > 500);
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('is-active'));
+          const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('is-active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    sections.forEach(s => navObserver.observe(s));
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form (no backend — just a friendly confirmation)
+    document.querySelector('.contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('button');
+      const original = btn.textContent;
+      btn.textContent = 'Message Sent ✓';
+      btn.disabled = true;
+      setTimeout(() => { btn.textContent = original; btn.disabled = false; this.reset(); }, 2500);
+    });
+  </script>
+
+</body>
+
+</html>
