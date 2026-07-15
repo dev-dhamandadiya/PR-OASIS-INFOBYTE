@@ -6,6 +6,12 @@ A modern and responsive BookStore Landing Page built using HTML and CSS. This pr
 
 The BookStore Landing Page features a clean and attractive user interface that highlights various book collections and services. The website is designed with simplicity, readability, and user experience in mind.
 
+
+## 🔗 Project Links
+
+🎥 **Demo Video:**  
+"https://drive.google.com/file/d/1WwJp69y7GOS4_8yu0XKDjr2yeEDgapHU/view?usp=sharing"
+
 ## ✨ Features
 
 - Responsive Navigation Bar
@@ -44,7 +50,7 @@ BookStore/
 
 The objective of this project is to create a visually appealing landing page using only HTML and CSS while practicing layout design, styling techniques, and responsive web development concepts.
 
-📸 Preview
+
 
 A professional bookstore landing page featuring:
 

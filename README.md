@@ -134,22 +134,22 @@ Git & GitHub Workflow
 Add screenshots here:
 
 ## Portfolio
-![Portfolio Screenshot](screenshots/portfolio.png)
+![Portfolio Screenshot](./portfolio.png)
 
 ## Book Store Landing Page
-![Book Store Screenshot](screenshots/bookstore.png)
+![Book Store Screenshot](/OIBSIP-LEVEL-1/OIBSIP-Diya-BookStore-Landing-Page/images/logo.png)
 
 ## Temperature Converter
-![Temperature Screenshot](screenshots/temp-converter.png)
+![Temperature Screenshot](./Tem.png)
 
 ## Authentication Pages
-![Auth Screenshot](screenshots/auth.png)
+![Auth Screenshot](./Auth.png)
 
 ## Calculator
-![Calculator Screenshot](screenshots/calculator.png)
+![Calculator Screenshot](./calculator.png)
 
 ## To-Do List
-![Todo Screenshot](screenshots/todo.png)
+![Todo Screenshot](/OIBSIP-LEVEL-2/OIBSIP-To-Do-List/list.png)
 🏆 Internship Outcome
 
 This internship provided hands-on experience in building real-world web applications and strengthened my frontend development skills through practical implementation of HTML, CSS, JavaScript, and responsive design concepts.
